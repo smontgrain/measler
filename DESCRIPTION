@@ -15,3 +15,5 @@ Suggests:
     knitr,
     rmarkdown
 VignetteBuilder: knitr
+URL: https://github.com/smontgrain/measler
+BugReports: https://github.com/smontgrain/measler/issues
