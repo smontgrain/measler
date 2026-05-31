@@ -28,6 +28,11 @@ load_data <- function(){
       rubella_clinical = na_6
     ) |>
     slice(-1)
+  
+  list(
+    cases_month = cases_month,
+    cases_year = cases_year
+  )
 }
 
 

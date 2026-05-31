@@ -35,9 +35,11 @@ monthly_table <- function(selected_region,
     "WPR"  = "Western Pacific"
   )
   
+  selected_region_names <- paste(region_labels[selected_region], collapse = ", ")
+  
   filtered_data <- cases_month |>
     filter(
-      region == selected_region,
+      region %in% selected_region,
       measles_total >= 0
     )
   
@@ -67,10 +69,7 @@ monthly_table <- function(selected_region,
     ) |>
     cols_label(region = "Region") |>
     tab_header(
-      title = paste(
-        "Average Monthly Measles Cases:",
-        region_labels[selected_region]
-      )
+      title = paste("Average Monthly Measles Cases:", selected_region_names)
     ) |>
     tab_style(
       style = cell_text(weight = "bold"),
