@@ -1,6 +1,4 @@
-cases_month <- readr::read_csv(
-  "https://raw.githubusercontent.com/rfordatascience/tidytuesday/main/data/2025/2025-06-24/cases_month.csv"
-)
+cases_month <- load_data()$cases_month
 
 test_that("monthly_table returns a gt table for valid region", {
   tbl <- monthly_table(cases_month, "AMR")
