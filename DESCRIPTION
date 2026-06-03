@@ -22,6 +22,7 @@ Imports:
     dplyr,
     ggplot2,
     gt,
+    janitor,
     readr,
     tidyr
 URL: https://github.com/adrianantonelli/measler
