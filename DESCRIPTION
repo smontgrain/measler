@@ -19,11 +19,15 @@ Suggests:
     testthat (>= 3.0.0)
 VignetteBuilder: knitr
 Imports: 
+    arrow,
     dplyr,
     ggplot2,
     gt,
     janitor,
     readr,
+    rnaturalearth,
+    rnaturalearthdata,
+    sf,
     tidyr
 URL: https://github.com/adrianantonelli/measler
 BugReports: https://github.com/adrianantonelli/measler/issues
