@@ -91,7 +91,7 @@ country_table("Japan")
 
 ## 6. 'filter-region()' - cleaning / wrangling
 
-Filters the monthly data set down to a single WHO World Region, optionally restricting the results to specific months. The output summarizes the average measles cases per month for that region. The code below runs the filter for the Western Pacific World region on the odd months in the year.
+Filters the monthly data set down to a single WHO World Region, optionally restricting the results to specific months. The output summarizes the average measles cases per month for that region. The code below runs the filter for the Western Pacific World region on all the months in the year.
 
 ```{r}
 #| label: filter-region
